@@ -1,0 +1,76 @@
+/* ── Sidebar container ── */
+.sidebar {
+  background-image: url('../assets/images/bg-sidebar-desktop.svg');
+  height: 100%;
+  min-height: 568px;
+  width: 274px;
+  flex-shrink: 0;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+
+.sidebar__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 20px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.sidebar__step {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* ── Circle numbers ── */
+.sidebar__circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: inherit;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.sidebar__circle--active {
+  background: #bfe2fd;
+  border-color: #bfe2fd;
+  color: #022959;
+}
+
+/* ── Step text ── */
+.sidebar__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sidebar__step-label {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.55);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.sidebar__step-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
