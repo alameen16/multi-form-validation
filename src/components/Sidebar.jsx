@@ -1,4 +1,4 @@
-import './Sidebar.css';
+import './sidebar.css';
 
 const steps = [
   { number: 1, label: 'YOUR INFO' },
